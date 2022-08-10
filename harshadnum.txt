@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{ 
+    int n,sum=0,r,temp;
+    printf("enter n value");
+    scanf("%d",&n);
+	temp=n;
+    while(n>0)
+    {
+        r=n%10;
+        sum=sum+r;
+        n=n/10;
+    }
+    if(temp%sum==0)
+    printf("harshad number");
+    else
+    printf("not harshad number");
+    return 0;
+}
+
+
+
+output:
+        enter n value156
+harshad number
+
+
+
+
+
+enter n value22
+not harshad number
